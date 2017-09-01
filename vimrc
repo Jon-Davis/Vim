@@ -30,9 +30,9 @@ hi CursorLine cterm=bold
 hi CursorLineNr term=bold ctermfg=Yellow
 hi Pmenu ctermfg=Black ctermbg=Grey
 hi PmenuSel cterm=bold ctermfg=Black ctermbg=White
-nnoremap <C-Up> <C-W><C-J>
-nnoremap <C-Down> <C-W><C-L>
-nnoremap <C-Right> <C-W><C-K>
+nnoremap <C-Up> <C-W><C-K>
+nnoremap <C-Down> <C-W><C-J>
+nnoremap <C-Right> <C-W><C-L>
 nnoremap <C-Left> <C-W><C-H>
 "Syntastic settings
 set statusline+=%#warningmsg#
