@@ -31,11 +31,9 @@ hi CursorLineNr term=bold ctermfg=Yellow
 hi Pmenu ctermfg=Black ctermbg=Grey
 hi PmenuSel cterm=bold ctermfg=Black ctermbg=White
 nnoremap <C-Up> <C-W><C-J>
-nnoremap <C-Down> <C-W><C-K>
-nnoremap <C-Right> <C-W><C-L>
+nnoremap <C-Down> <C-W><C-L>
+nnoremap <C-Right> <C-W><C-K>
 nnoremap <C-Left> <C-W><C-H>
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd l
 "Syntastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -48,3 +46,6 @@ let g:syntastic_enable_highlighting=0
 "Airline settings
 set noshowmode
 let g:airline_powerline_fonts = 1
+"NERDTree settings
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd l
